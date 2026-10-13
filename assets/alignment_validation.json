@@ -1,0 +1,8 @@
+{
+  "sweet_pixel_agreement": 1.0,
+  "off_axis_pixel_agreement": 0.5736709104938271,
+  "off_axis_image_difference": 0.23579779267311096,
+  "fixed_depth_unchanged": true,
+  "reanchor_does_not_reset_fluid": true,
+  "reanchored_pixel_agreement": 1.0
+}

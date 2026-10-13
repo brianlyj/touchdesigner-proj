@@ -1,0 +1,31 @@
+{
+  "native_save_succeeded": true,
+  "file": "Anamorphic_Fluid_Room.toe",
+  "bytes": 262994,
+  "sha256": "b7c72897090b84d14b978bf1b3081009dd854f1235ddf137b02ee1e7feea4202",
+  "errors": [],
+  "finite_pigment": true,
+  "microphone_status": "Microphone / default",
+  "settings": {
+    "Pitchlow": 85.0,
+    "Pitchhigh": 255.0,
+    "Coloursensitivity": 1.8,
+    "Transition": 1.0,
+    "Palette": "audio",
+    "Source": "mic",
+    "Auditionsilence": false
+  },
+  "channels": {
+    "loudness": 4.160793479789199e-06,
+    "pitch_hz": 196.36826342441577,
+    "pitch_norm": 0.7836339450828887,
+    "colour_loudness": 7.4894157987559495e-06,
+    "colour_pitch_norm": 0.9102381812179154,
+    "idle_mix": 0.15832641250017332,
+    "calm": 0.15314402750006523,
+    "wonder": 0.8416455838395087,
+    "joy": 0.004743750812259961,
+    "intensity": 0.0004666378481659315,
+    "fps": 60.17285804382075
+  }
+}

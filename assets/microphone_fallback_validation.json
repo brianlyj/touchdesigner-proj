@@ -1,0 +1,6 @@
+{
+  "missing_device_status": "Microphone unavailable / idle active; select Synthetic demo",
+  "simulation_time_advanced": true,
+  "finite_fluid": true,
+  "restored_source_status": "Microphone / default"
+}

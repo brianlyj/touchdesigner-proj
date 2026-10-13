@@ -1,0 +1,19 @@
+{
+  "room_blender_xyz_m": [
+    6.0,
+    5.0,
+    3.0
+  ],
+  "metre_scale": 1.0,
+  "named_surfaces": [
+    "back_wall",
+    "ceiling",
+    "curved_wall",
+    "floor",
+    "front_wall",
+    "left_wall",
+    "protrusion"
+  ],
+  "human_height_m": 1.7599999904632568,
+  "opens_successfully": true
+}

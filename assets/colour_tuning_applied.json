@@ -1,0 +1,14 @@
+{
+  "settings": {
+    "Pitchlow": 85.0,
+    "Pitchhigh": 255.0,
+    "Coloursensitivity": 1.8,
+    "Transition": 1.0,
+    "Sensitivity": 1.0,
+    "Gate": -49.5,
+    "Ceiling": -12.0
+  },
+  "simulation_time_preserved": true,
+  "weights_preserved": true,
+  "errors": []
+}

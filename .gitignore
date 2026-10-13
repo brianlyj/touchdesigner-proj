@@ -1,0 +1,32 @@
+# Native TouchDesigner automatic versions and development checkpoints
+*.[0-9]*.toe
+Anamorphic_Fluid_Room_Working_*.toe
+Anamorphic_Fluid_Room_refined_*.toe
+/Backup/
+/checkpoints/
+
+# Local MCP authentication/runtime state and extracted inspection files
+/.tdmcp/
+/tools/TDMCP.tox.dir/
+/tools/TDMCP.tox.toc
+/tools/operator-help.json
+/tools/fluid-operator-help.txt
+/tools/mcp-tools.json
+
+# Python caches, local environments and credentials
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and operating-system temporary files
+*.blend[0-9]
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db

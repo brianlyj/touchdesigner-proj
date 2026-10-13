@@ -1,0 +1,11 @@
+{
+  "cycles": 3,
+  "maximum_mood_weight_change_per_frame": 0.007025175177319154,
+  "calm_after_each_idle": [
+    0.9917720617635046,
+    0.991771120544166,
+    0.9917711204737135
+  ],
+  "unpitched_hold": true,
+  "finite": true
+}

@@ -1,0 +1,19 @@
+{
+  "units": "metres",
+  "td_axes": "Y up, camera forward -Z",
+  "room_default": [
+    6,
+    5,
+    3
+  ],
+  "surfaces": [
+    "floor",
+    "ceiling",
+    "front_wall",
+    "back_wall",
+    "left_wall",
+    "curved_wall",
+    "protrusion"
+  ],
+  "mannequin_height": 1.76
+}

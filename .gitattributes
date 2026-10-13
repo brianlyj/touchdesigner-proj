@@ -1,0 +1,11 @@
+* text=auto
+*.py text eol=lf
+*.glsl text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.toe binary
+*.tox binary
+*.blend binary
+*.glb binary
+*.png binary
+*.mp4 binary

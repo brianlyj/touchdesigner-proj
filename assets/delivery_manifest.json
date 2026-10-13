@@ -1,0 +1,18 @@
+{
+  "Anamorphic_Fluid_Room.toe": {
+    "bytes": 262986,
+    "sha256": "197aea52b00b7ae5343da0cf64812d1a5073c3479a258d4e9e7d60b4cafe6f1d"
+  },
+  "Anamorphic_Fluid_Room.blend": {
+    "bytes": 160111,
+    "sha256": "72fcd3ecc25631442e11b0fcef65d60f1077825b9917606cffc2d7d1e6ed7af4"
+  },
+  "assets/room_and_person.glb": {
+    "bytes": 272924,
+    "sha256": "5ead5b2f05a38b2ee0afc95078f949bde53e417b9eb35d29d66c87645a14e52f"
+  },
+  "README.md": {
+    "bytes": 14805,
+    "sha256": "b82234abc2b3e5477c74806082025378e7303dad2577f75391fc970e41fe0fda"
+  }
+}

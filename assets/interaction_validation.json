@@ -1,0 +1,18 @@
+{
+  "movement_keeps_depth_reference": true,
+  "movement_keeps_anchor": true,
+  "reanchor_keeps_fluid_time": true,
+  "keyboard_callback_moves_person": true,
+  "mouse_callback_rotates_person": true,
+  "button_first": true,
+  "button_third": true,
+  "button_compare": true,
+  "performance_preset_shape": [
+    256,
+    256,
+    4
+  ],
+  "performance_preset_finite": true,
+  "errors": [],
+  "optical_measurements": "alignment_validation.json (staged across rendered frames)"
+}

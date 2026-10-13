@@ -1,0 +1,15 @@
+{
+  "low": {
+    "velocity_rms": 0.04989873245358467,
+    "spatial_gradient_rms": 0.017261985689401627,
+    "finite": true
+  },
+  "high": {
+    "velocity_rms": 0.0351395308971405,
+    "spatial_gradient_rms": 0.012246960774064064,
+    "finite": true
+  },
+  "viscosity_diffuses": true,
+  "seed_rms": 0.04999999329447746,
+  "operators_error_free": true
+}
