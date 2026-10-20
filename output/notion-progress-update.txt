@@ -1,0 +1,60 @@
+# Draft Notion progress update
+
+Destination: https://app.notion.com/p/KR-D-Anamorphic-Projection-Simulator-3fb627e6e28880079d87c42c9abc1643
+
+Published to the Notion page: the nine-slide PDF, an 18-second prototype video, and four project images. Pending approval: publish the following written project status, test results and private repository links alongside that media.
+
+---
+
+## Progress update
+16 October 2026
+**Status: working virtual prototype; physical-site validation remains pending.**
+The TouchDesigner prototype projects a continuous, voice-responsive fluid image across uneven room surfaces from a fixed sweet spot. Blender supplies editable room and mannequin assets. The latest work improves fluid detail and makes ordinary speaking changes produce a clearer colour response.
+
+## What is working
+- **Room and viewing:** a 6 × 5 × 3 m room with a sharp corner, inward-curved wall and protrusion; adjustable mannequin; first-person, third-person and comparison views; basic collision and inspection cutaway.
+- **Anamorphic alignment:** independent sweet-spot camera, projective surface mapping, depth rejection and checkerboard/circle tests. Moving the person leaves the projection fixed. “Set sweet spot here” re-anchors without resetting the fluid.
+- **Fluid simulation:** 512 × 512 GPU solver, with a 256 performance preset, three emitters, viscosity diffusion and pressure projection. The refinement adds rolling eddies, thin pigment trails and pale ink folding into coloured pigment.
+- **Voice response:** microphone selection, level meter, noise-floor calibration, RMS loudness and confidence-filtered YIN pitch detection. Unpitched speech holds the last reliable pitch; a labelled synthetic demo is available.
+- **Colour and idle:** continuous Calm, Wonder, Joy and Intensity palette blends. These are artistic expressions, not detected human emotions. Below the noise gate, the fluid keeps moving and gradually returns to Calm.
+
+## Latest improvements
+- **Conversational pitch mapping:** adjustable 85–255 Hz default mapping, while the detector retains its 80–1,000 Hz range.
+- **Stronger colour sensitivity:** independent colour gain defaults to 1.8, without increasing fluid force or ink injection.
+- **Smoother, faster response:** a one-second palette time constant reached about 85% of a test transition after two seconds, compared with 27% under the previous saved settings. Existing pigment changes colour through perceptual OKLab blending.
+- **Persistent silence behaviour:** 12% baseline force, 8% injection and slow breathing modulation. After one second below the gate, the eight-second Calm return begins without resetting simulation buffers.
+- **Progress presentation:** a nine-slide deck with a black background is prepared in Markdown, HTML and PDF. The final slide contains only “Live Demo.” The PDF is attached to this page. The editable Markdown and HTML versions remain local and have not been pushed to GitHub.
+
+## Recorded validation
+Tests recorded on 13 October 2026 using TouchDesigner 2025.33230 and an NVIDIA RTX 4060 Laptop GPU.
+| Check | Recorded result |
+| --- | --- |
+| 512 × 512 performance | Comparison: 60.02 FPS average, 59.32 minimum. First person: 60.08 average, 59.95 minimum. Minimum values are sampled, smoothed project FPS. |
+| Idle stability | 65.6 seconds at a nonzero input approximately 10 dB below the calibrated gate; all 64 samples finite, with moving pigment and mean density around 0.24–0.48. |
+| Alignment and camera independence | 100% agreement with the expected grid at sampled pixels from the sweet spot and after re-anchoring; 57.4% off-axis. Reference depth stayed unchanged after person movement. |
+| Pitch and colour | Test tones resolved within one semitone. Speech-range regression checks passed for monotonic pitch/volume response, independent colour gain and no mood flicker during unpitched input. |
+| Solver behaviour | Higher viscosity reduced velocity-field spatial variation by about 29%. Pressure projection reduced divergence on every recorded refined-idle sample, averaging about 13.7% per step. |
+| Save and reopen | An earlier refined save reopened with microphone recovery, restored controls and no operator errors. The final speech-colour save succeeded with finite pigment and no operator errors; an independent cold reopen of that final version remains a handoff check. |
+These short prototype runs do not establish installation endurance or performance with physical projector outputs. In-room human humming and multiple-speaker checks are still needed.
+
+## Deliverables and live demo
+[Project repository — access required](https://github.com/brianlyj/touchdesigner-proj)
+- **Main working file:** `Anamorphic_Fluid_Room.toe`.
+- **Editable assets:** `Anamorphic_Fluid_Room.blend` and `assets/room_and_person.glb`, with verified metre scale and coordinate conversion.
+- **Source and evidence:** embedded runtime/shaders, readable `src/`, reproducible build tools and validation reports in `assets/`.
+- **Preserved:** the original `Anamorphic_Ring.toe` demo and installed TouchDesigner MCP connection.
+
+To run: open the main TOE in TouchDesigner, then press **F1** or open the `/fluid_room` viewer. If the network opens inside `/anamorphic`, press **U** to return to the root and enter `/fluid_room`. Select the microphone, calibrate the noise floor, turn **Audition silence** off and use **Palette audition → Follow voice**. Use the synthetic demo when a microphone is unavailable. The TOE runs without Blender or Codex open.
+
+## Next steps
+- [ ] Test a clean, dimensioned mesh of the actual site and agree on the intended viewing position.
+- [ ] Calibrate with real voices in the room; check humming, different speakers, background noise and room acoustics.
+- [ ] Independently cold-open the final saved project and confirm settings, microphone recovery and idle startup.
+- [ ] Run a longer unattended session with the intended display/projector outputs.
+- [ ] Plan physical projector coverage, calibration, brightness and visitor-shadow handling as the next phase.
+
+Physical projection calibration and live person tracking are outside the current virtual prototype.
+
+## Evidence
+[Implementation and controls](https://github.com/brianlyj/touchdesigner-proj/blob/8a322e5372098724cccbc71efe64deabe0b8b952/README.md) · [Fluid and FPS samples](https://github.com/brianlyj/touchdesigner-proj/blob/8a322e5372098724cccbc71efe64deabe0b8b952/assets/refined_fluid_validation.json) · [Alignment checks](https://github.com/brianlyj/touchdesigner-proj/blob/8a322e5372098724cccbc71efe64deabe0b8b952/assets/alignment_validation.json) · [Speech-colour tests](https://github.com/brianlyj/touchdesigner-proj/blob/8a322e5372098724cccbc71efe64deabe0b8b952/assets/speech_colour_validation.json) · [Final save checks](https://github.com/brianlyj/touchdesigner-proj/blob/8a322e5372098724cccbc71efe64deabe0b8b952/assets/speech_colour_delivery.json)
+

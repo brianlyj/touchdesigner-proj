@@ -30,3 +30,6 @@ venv/
 *.tmp
 .DS_Store
 Thumbs.db
+
+# Local presentation rendering checks
+/output/playwright/
